@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HourlyForcastIdentifier" id="gTV-IL-0wX" customClass="HourlyWeatherCollectionViewCell" customModule="How_is_the_weather_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="301"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="301"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93E-7z-bIN">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="301"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wZZ-1z-h74">
+                                <rect key="frame" x="20" y="10" width="240" height="281"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKM-w4-PAU">
+                                        <rect key="frame" x="103.66666666666667" y="0.0" width="32.666666666666671" height="85.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.rain" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jyf-PK-glv">
+                                        <rect key="frame" x="107.66666666666667" y="97.000000000000014" width="24.666666666666671" height="87.333333333333357"/>
+                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K94-6u-1ft">
+                                        <rect key="frame" x="105" y="195.33333333333334" width="30" height="85.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wZZ-1z-h74" firstAttribute="top" secondItem="93E-7z-bIN" secondAttribute="top" constant="10" id="BHd-Bl-TBy"/>
+                            <constraint firstAttribute="bottom" secondItem="wZZ-1z-h74" secondAttribute="bottom" constant="10" id="s9e-KO-Pr0"/>
+                            <constraint firstAttribute="trailing" secondItem="wZZ-1z-h74" secondAttribute="trailing" constant="20" id="t49-dW-g0t"/>
+                            <constraint firstItem="wZZ-1z-h74" firstAttribute="leading" secondItem="93E-7z-bIN" secondAttribute="leading" constant="20" id="xHe-mH-Ima"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="93E-7z-bIN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1AA-VQ-PTD"/>
+                <constraint firstAttribute="bottom" secondItem="93E-7z-bIN" secondAttribute="bottom" id="J4j-3J-CeM"/>
+                <constraint firstAttribute="trailing" secondItem="93E-7z-bIN" secondAttribute="trailing" id="Lw1-Id-gzA"/>
+                <constraint firstItem="93E-7z-bIN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bDa-1D-pW7"/>
+                <constraint firstItem="93E-7z-bIN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hjy-dN-wqx"/>
+                <constraint firstAttribute="bottom" secondItem="93E-7z-bIN" secondAttribute="bottom" id="jl4-g0-B8i"/>
+                <constraint firstItem="93E-7z-bIN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uOn-9U-C2c"/>
+            </constraints>
+            <size key="customSize" width="280" height="301"/>
+            <connections>
+                <outlet property="tempAtThisHourLabel" destination="K94-6u-1ft" id="mA7-gu-cCL"/>
+                <outlet property="timeInHoursLabel" destination="UKM-w4-PAU" id="E8N-nl-D9O"/>
+                <outlet property="weatherIconUIImage" destination="jyf-PK-glv" id="QBh-Aj-2Fk"/>
+            </connections>
+            <point key="canvasLocation" x="56.488549618320612" y="36.267605633802816"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cloud.rain" catalog="system" width="126" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
